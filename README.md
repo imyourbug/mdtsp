@@ -25,9 +25,14 @@ Step-by-step instructions on how to get the development environment running.
 ### Prerequisites
 List any prerequisites, such as software or libraries that need to be installed beforehand.
 
+### Contact
+- Name: Odysseas Karagiannidis
+- Email: okaragia@ece.auth.gr
+- GitHub: IthakeCanWait
+
 ```sh
 # Example: Install Python and pip
 sudo apt-get install python3
 sudo apt-get install python3-pip
 
-
+### Contact
