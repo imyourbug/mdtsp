@@ -1,5 +1,5 @@
 # DeepRL-MDTSP
-A solution to the Multiple Depot Travelling Salesman problem using Deep Reinforcment Learning, Attention Networks, GNN's, Genetic Algorithms and Fuzzy Logic.
+A solution to the Multiple Depot Travelling Salesman (MDTSP) problem using Deep Reinforcment Learning, Attention Networks, Graph Neural Network (GNN), Genetic Algorithm (GA) and Fuzzy Logic.
 
 ## Table of Contents
 - [Description](#description)
@@ -11,13 +11,13 @@ A solution to the Multiple Depot Travelling Salesman problem using Deep Reinforc
 - [Contact](#contact)
 
 ## Description
-Provide a brief description of your project here. Explain what it does, the problem it solves, and any relevant background information.
+This homework proposes a novel computational intelligence architecture, which combines DeepRL, GNNs, and Attention Networks to effectively solve the MDTSP. Futhermore, it uses a fuzzy genetic algorithm that does the optimal depot selection using the pre-trained model.
 
 ## Features
 List the key features of your project. For example:
-- Feature 1: Description of feature 1
-- Feature 2: Description of feature 2
-- Feature 3: Description of feature 3
+- GNN and Attention Mechanisms: Creation of node, graph and agent embeddings leading to a stochastic assignment mechanism
+- Deep Reinforcement Learning: Uses these embeddings to learn a policy.
+- Genetic Algorithm and Fuzzy Logic: Finds the best depot for each agent using the RL model. The fuzzy logic is integrated into the mutation rate and enhances the performance of the algorithm.
 
 ## Installation
 Step-by-step instructions on how to get the development environment running.
