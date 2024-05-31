@@ -198,20 +198,3 @@ if __name__ == '__main__':
     print(rewards)
 
     plt.show()
-
-
-    # print(fea)
-    # sub_tours = [[fea[b, 0]] for b in range(fea.shape[0])]
-    # fea_repeat = fea.repeat(1, n_agent, 1).reshape(n_batch, n_agent, n_nodes, -1)
-    # print(fea_repeat)
-    # action_repeat = action + torch.arange(0, n_agent, n_agent*n_batch)
-    # print(torch.arange(0, n_agent, n_agent*n_batch))
-    # index_ops = (torch.arange(0, 3, 6)[:, None] + torch.arange(3)).view(-1)
-    # print(index_ops)
-
-
-
-    # grad1 = torch.autograd.grad(pi.sum(), [param for param in embd_net.parameters()])
-    # print(grad1)
-    # grad2 = torch.autograd.grad(pi.sum(), [param for param in policy.parameters()])
-    # print(grad2)
