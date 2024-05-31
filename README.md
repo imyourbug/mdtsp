@@ -34,7 +34,6 @@ Ensure you have the following dependencies installed:
 ## Usage
 - `train.py`: Contains the training code.
 - `test.py` and `validation.py`: Perform testing and validation.
-- `validation.py` : Validates the results during training.
 - `testing_data.py` : Contains the data for testing. Create new data if needed.
 - `data_generator.py` (Uniform Distribution) and `data_generator_Newman.py` (Newman-Scott process): Generate data.
 - `GA_DataGen.py`: Generates data using the genetic algorithm.
