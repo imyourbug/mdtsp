@@ -44,8 +44,4 @@ List any prerequisites, such as software or libraries that need to be installed 
 - Name: Odysseas Karagiannidis
 - Email: okaragia@ece.auth.gr
 
-```sh
-# Example: Install Python and pip
-sudo apt-get install python3
-sudo apt-get install python3-pip
 
