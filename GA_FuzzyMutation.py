@@ -92,6 +92,9 @@ def remove_duplicate_chromosomes(elites):
     return unique_elites
 
 def selection(chromosomes, fitness_scores, Population_Number, elitism_rate=0.1):
+    # Randomness
+    np.random.seed(None)
+    
     # Calculate the number of elites based on the elitism rate and population number
     num_elites = int(Population_Number * elitism_rate)
     
