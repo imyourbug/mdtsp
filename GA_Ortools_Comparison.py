@@ -21,8 +21,8 @@ if __name__ == '__main__':
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     n_agent = 5
-    n_nodes = [1000]
-    batch_size = 2
+    n_nodes = [50]
+    batch_size = 1
     seeds = [1]
 
     # Load net
