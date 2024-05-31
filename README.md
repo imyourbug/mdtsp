@@ -37,7 +37,7 @@ Ensure you have the following dependencies installed:
 - `data_generator.py` (Uniform Distribution) and `data_generator_Newman.py` (Newman-Scott process): Generate data.
 - `GA_DataGen.py`: Generates data using the genetic algorithm.
 - `ortools_tsp.py`: Solves the TSP problem for reward calculations.
-- `vrp.mdtsp`: Solves the MDTSP for baseline comparison with the model.
+- `vrp.mdtsp.py`: Solves the MDTSP for baseline comparison with the model.
 - `cmpnn.py`: Contains the Message Passing Neural Network.
 - `policy_mdtsp.py`: Contains code related to the policy.
 - `genetic_algorithm.py`: Implements a simple genetic algorithm.
