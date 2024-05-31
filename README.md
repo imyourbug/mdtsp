@@ -50,7 +50,8 @@ Ensure you have the following dependencies installed:
 - Email: okaragia@ece.auth.gr
 
 ## References
-1. Hu, Yujiao, Yuan Yao, and Wee Sun Lee. "A reinforcement learning approach for optimizing multiple traveling salesman problems over graphs." Knowledge-Based Systems 204 (2020): 106244. DOI: [10.1016/j.knosys.2020.106244](https://doi.org/10.1016/j.knosys.2020.106244).
+1. Code structure inspired by [zcaicaros/DRL-MTSP](https://github.com/zcaicaros/DRL-MTSP).
+2. Hu, Yujiao, Yuan Yao, and Wee Sun Lee. "A reinforcement learning approach for optimizing multiple traveling salesman problems over graphs." Knowledge-Based Systems 204 (2020): 106244. DOI: [10.1016/j.knosys.2020.106244](https://doi.org/10.1016/j.knosys.2020.106244).
 
 ```bibtex
 @article{hu2020reinforcement,
@@ -63,7 +64,6 @@ Ensure you have the following dependencies installed:
   publisher={Elsevier}
 }
 
-2. Code structure inspired by zcaicaros/DRL-MTSP.
 
 
 
