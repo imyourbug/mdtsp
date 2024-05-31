@@ -18,9 +18,6 @@ Population_Number = 100
 # MAX GENERATIONS
 max_generations = 10
 
-# Fitness Coefficient (30 for 100, 60 for 200)
-Fitness_C = 40
-
 n_agent = 5
 n_nodes = 50
 
