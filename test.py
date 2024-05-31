@@ -8,14 +8,8 @@ from vrp_mdtsp import entrance
 
 
 def test(model, dataset, device, plot, depot_indices=[0,1,2,3,4]):
-    #model = Policy(in_chnl=2, hid_chnl=64, n_agent=n_agent, key_size_embd=64,
-    #                key_size_policy=64, val_size=64, clipping=10,depot_indices=depot_indices, dev=dev)
-    # model to device
-    model.to(device)
-    model.eval()
     
-
-    # to batch graph
+    # batch graph
     adj = torch.ones([dataset.shape[0], dataset.shape[1], dataset.shape[1]])  # adjacent matrix fully connected
     data_list = [Data(x=dataset[i], edge_index=torch.nonzero(adj[i], as_tuple=False).t(), as_tuple=False) for i in range(dataset.shape[0])]
     batch_graph = Batch.from_data_list(data_list=data_list).to(device)
