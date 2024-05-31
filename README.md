@@ -23,7 +23,6 @@ A solution to the Multiple Depot Travelling Salesman (MDTSP) problem using Deep 
   pages={106244},
   year={2020},
   publisher={Elsevier}
-}
 - Code structure from https://github.com/zcaicaros/DRL-MTSP/blob/main/README.md
 
 ## Features
