@@ -45,7 +45,6 @@ Ensure you have the following dependencies installed:
 - `genetic_algorithm.py`: Implements a simple genetic algorithm.
 - `GA_FuzzyMutation.py`: Implements the fuzzy-mutation genetic algorithm.
 - `saved_model_MDMTSP.py`: Contains the two trained models
-- 
 - Other files: Perform comparisons between OR-Tools, RL-model, and genetic algorithms used in the project report.
 
 
