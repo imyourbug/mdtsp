@@ -345,14 +345,9 @@ def main(data, Population_Number, max_generations, n_agent, n_nodes):
     #print("\n\nBEST INDIVIDUAL VALUE = ", solution_value )
     #plt.figure(figsize=(6, 6))
     #test(policy,solution_data,dev, plot=1)
-    test(policy,solution_data,dev, plot=0)
 
-    end_time = time.time()
-    elapsed_time = int(end_time - start_time)
-    #print("ORTOOLS SOLUTION FOR THE CHOSEN DEPOTS (for the same running time of ", elapsed_time, 'seconds : ')
-    #print(elapsed_time)
-    #entrance(cnum=  n_nodes, anum=n_agent , batch_index=0,  batch_size=1, coords=solution_data , timeLimitation=elapsed_time)
-    #entrance(cnum=n_nodes, anum=n_agent, batch_index=0, batch_size=1, coords=data, depot_count=5, timeLimitation=elapsed_time)
+    # Test the solution data (plot=1 for plotting)
+    test(policy,solution_data,dev, plot=0)
 
     return solution_value, solution_data, chromosomes[0]
 
@@ -368,6 +363,8 @@ if __name__ == '__main__':
     n_nodes = 20
     data = torch.load('./testing_data/testing_data_' + str(n_nodes) + '_' + str(1))
 
+    ### UNCOMMENT FOR ORTOOLS CALCULATION
+    #start_time = time.time()
     _,solution_data,_=main(data, Population_Number, max_generations, n_agent, n_nodes)
     #end_time = time.time()
     #elapsed_time = int(end_time-start_time)
