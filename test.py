@@ -26,7 +26,6 @@ def test(model, dataset, device, plot, depot_indices=[0,1,2,3,4]):
     action, log_prob = action_sample(pi)
     
     # get reward for each batch
-    #reward = get_reward(action, dataset, 5, plot, depot_indices=depot_indices)  # reward: tensor [batch, 1]
     reward = get_reward(action, dataset, 5, plot)  # reward: tensor [batch, 1]
 
     return np.array(reward).mean()
