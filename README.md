@@ -24,10 +24,12 @@ Idea from the paper "A reinforcement learning approach for optimizing multiple t
 Ensure you have the following dependencies installed:
 
 - [OR-Tools](https://developers.google.com/optimization/install/python)
-- Pytorch
-- CUDA
+- [Pytorch](https://pytorch.org/get-started/locally/)
+- [CUDA](https://developer.nvidia.com/cuda-downloads)
 - [Pytorch Geometric](https://github.com/pyg-team/pytorch_geometric)
 - [Scikit-fuzzy](https://github.com/scikit-fuzzy/scikit-fuzzy)
+- [Numpy](https://numpy.org/install/)
+- [Matplotlib](https://matplotlib.org/stable/install/index.html)
 
 ## Usage
 - `train.py`: Contains the training code.
