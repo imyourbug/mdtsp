@@ -1,6 +1,7 @@
 # DeepRL-MDTSP
 
 A solution to the Multiple Depot Travelling Salesman (MDTSP) problem using Deep Reinforcement Learning, Attention Networks, Graph Neural Network (GNN), Genetic Algorithm (GA), and Fuzzy Logic.
+
 [Project Report](https://www.overleaf.com/read/pmwvkbshmfkm#ff8fbe)
 
 ## Table of Contents
