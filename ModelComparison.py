@@ -52,57 +52,7 @@ if __name__ == '__main__':
             results_per_seed_model1.append(format(np.array(objs_model1).mean(), '.4f'))
             results_per_seed_model2.append(format(np.array(objs_model2).mean(), '.4f'))
         print('(Model1) Size:', size, results_per_seed_model1)
-        print('(Mdeol2) Size:', size, results_per_seed_model2)
+        print('(Model2) Size:', size, results_per_seed_model2)
 
 
 
-#(Model1) Size: 100 ['2.4921']
-#(Mdeol2) Size: 100 ['2.4532']
-
-#(Model1) Size: 200 ['3.2347']
-#(Mdeol2) Size: 200 ['3.1855']
-
-#(Model1) Size: 300 ['3.8457']
-#(Mdeol2) Size: 300 ['3.7792']
-
-
-#(Model1) Size: 400 ['4.3681']
-#(Mdeol2) Size: 400 ['4.2288']
-
-#(Model1) Size: 500 ['4.8581']
-#(Mdeol2) Size: 500 ['4.7112']
-
-#(Model1) Size: 700 ['5.6724']
-#(Mdeol2) Size: 700 ['5.4506']
-
-#(Model1) Size: 600 ['5.3435']
-#(Mdeol2) Size: 600 ['5.0962']
-
-#(Model1) Size: 800 ['5.9827']
-#(Mdeol2) Size: 800 ['5.7426']
-
-#(Model1) Size: 900 ['6.3093']
-#(Mdeol2) Size: 900 ['6.1614']
-
-#(Model1) Size: 1000 ['6.6329']
-#(Mdeol2) Size: 1000 ['6.3604']
-
-### NEWMAN
-
-#(Model1) Size: 200 ['2.7818']
-#(Mdeol2) Size: 200 ['2.7197']
-
-#(Model1) Size: 100 ['2.2221']
-#(Mdeol2) Size: 100 ['2.2255']
-
-#(Model1) Size: 300 ['3.2857']
-#(Mdeol2) Size: 300 ['3.2293']
-
-#(Model1) Size: 400 ['3.7410']
-#(Mdeol2) Size: 400 ['3.7726']
-
-#(Model1) Size: 500 ['4.0152']
-#(Mdeol2) Size: 500 ['3.9252']
-
-#(Model1) Size: 600 ['4.3508']
-#(Mdeol2) Size: 600 ['4.3793']
