@@ -7,8 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from vrp_mdtsp import entrance
 import time
-import skfuzzy as fuzz
-from skfuzzy import control as ctrl
 import copy
 import random
 
