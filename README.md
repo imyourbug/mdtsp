@@ -31,7 +31,11 @@ A solution to the Multiple Depot Travelling Salesman (MDTSP) problem using Deep 
 - Genetic Algorithm and Fuzzy Logic: Finds the best depot for each agent using the RL model. The fuzzy logic is integrated into the algorithm and enhances it's performance.
 
 ## Installation
-Step-by-step instructions on how to get the development environment running.
+- OR-Tools: https://developers.google.com/optimization/install/python
+- Pytorch
+- CUDA
+- Pytorch Geometric: https://github.com/pyg-team/pytorch_geometric
+- Scikit-fuzzy: https://github.com/scikit-fuzzy/scikit-fuzzy
 
 ### Prerequisites
 List any prerequisites, such as software or libraries that need to be installed beforehand.
@@ -39,11 +43,9 @@ List any prerequisites, such as software or libraries that need to be installed 
 ### Contact
 - Name: Odysseas Karagiannidis
 - Email: okaragia@ece.auth.gr
-- GitHub: IthakeCanWait
 
 ```sh
 # Example: Install Python and pip
 sudo apt-get install python3
 sudo apt-get install python3-pip
 
-### Contact
