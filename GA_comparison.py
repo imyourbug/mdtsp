@@ -19,11 +19,11 @@ if __name__ == '__main__':
     Population_Number = 100
 
     # MAX GENERATIONS
-    max_generations = 15
+    max_generations = 10
 
     n_agent = 5
-    n_nodes = [200]
-    batch_size = 50
+    n_nodes = [50]
+    batch_size = 1
     seeds = [1]
 
     probabilities = []
@@ -88,16 +88,5 @@ if __name__ == '__main__':
 
     plt.show()
 
-
-#Probabilities: [0.36, 0.62, 0.55]
-#Mean objectives of GA: [1.0322099999999998, 1.4334900000000002, 1.85192]
-#Mean objectives of FGA: [1.04691, 1.41743, 1.84266]
-#For N= 200
-#Probability that the GA is better than FGA: 0.36
-#Mean objective of GA: 2.46358
-#Mean objective of FGA: 2.47988
-#Probabilities: [0.36]
-#Mean objectives of GA: [2.46358]
-#Mean objectives of FGA: [2.47988]
 
     
