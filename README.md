@@ -34,6 +34,8 @@ Ensure you have the following dependencies installed:
 ## Usage
 - `train.py`: Contains the training code.
 - `test.py` and `validation.py`: Perform testing and validation.
+- `validation.py` : Validates the results during training.
+- `testing_data.py` : Contains the data for testing. Create new data if needed.
 - `data_generator.py` (Uniform Distribution) and `data_generator_Newman.py` (Newman-Scott process): Generate data.
 - `GA_DataGen.py`: Generates data using the genetic algorithm.
 - `ortools_tsp.py`: Solves the TSP problem for reward calculations.
@@ -42,6 +44,8 @@ Ensure you have the following dependencies installed:
 - `policy_mdtsp.py`: Contains code related to the policy.
 - `genetic_algorithm.py`: Implements a simple genetic algorithm.
 - `GA_FuzzyMutation.py`: Implements the fuzzy-mutation genetic algorithm.
+- `saved_model_MDMTSP.py`: Contains the two trained models
+- 
 - Other files: Perform comparisons between OR-Tools, RL-model, and genetic algorithms used in the project report.
 
 
