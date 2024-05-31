@@ -7,8 +7,6 @@ A solution to the Multiple Depot Travelling Salesman (MDTSP) problem using Deep 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 - [References](#references)
 
