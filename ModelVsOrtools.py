@@ -13,15 +13,17 @@ if __name__ == '__main__':
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     n_agent = 5
-    n_nodes = [400, 500, 600, 700, 800, 900, 1000]
-    batch_size = 512
+    n_nodes = [50]
+    batch_size = 1
     seeds = [1, 2, 3]
 
 
     # load net
     policy = Policy(in_chnl=2, hid_chnl=64, n_agent=n_agent, key_size_embd=64,
                     key_size_policy=64, val_size=64, clipping=10, dev=dev)
-    path = './saved_model_MDMTSP/{}.pth'.format(str(50) + '_' + str(n_agent) + '_lr' + str(0.0001) + '_cmpnn')
+    #path = './saved_model_MDMTSP/{}.pth'.format(str(50) + '_' + str(n_agent) + '_lr' + str(0.0001) + '_cmpnn')
+    path = './saved_model_MDMTSP/{}.pth'.format(str(50) + '_' + str(n_agent) + '_lr' + str(0.0001) + '_cmpnn'+ '_goodData')
+    
     policy.load_state_dict(torch.load(path, map_location=torch.device(dev)))
 
     for size in n_nodes:
@@ -50,7 +52,3 @@ if __name__ == '__main__':
             results_per_seed_ortools.append(format(np.array(objs_ortools).mean(), '.4f'))
         print('(Model) Size:', size, results_per_seed_model)
         print('(Ortools) Size:', size, results_per_seed_ortools)
-
-
-#(Model) Size: 1000 ['6.9089']
-#(Ortools) Size: 1000 ['17.7156']
