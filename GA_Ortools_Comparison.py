@@ -30,6 +30,7 @@ if __name__ == '__main__':
                     key_size_policy=64, val_size=64, clipping=10, dev=dev)
     
     path = './saved_model_MDMTSP/{}.pth'.format(str(50) + '_' + str(n_agent) + '_lr' + str(0.0001) + '_cmpnn')
+    #path = './saved_model_MDMTSP/{}.pth'.format(str(50) + '_' + str(n_agent) + '_lr' + str(0.0001) + '_cmpnn_goodData')
     policy.load_state_dict(torch.load(path, map_location=torch.device(dev)))
     
     probabilities = []
