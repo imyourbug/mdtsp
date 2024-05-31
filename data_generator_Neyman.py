@@ -57,5 +57,5 @@ if __name__ == '__main__':
     torch.manual_seed(3)
 
     data = neyman_scott_process(n_nodes, b_size, flag)
-    #plot_data(data[0].squeeze(0))
-    #plt.show()
+    plot_data(data[0].squeeze(0))
+    plt.show()
