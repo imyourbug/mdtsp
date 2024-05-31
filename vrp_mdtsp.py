@@ -118,9 +118,7 @@ if __name__ == '__main__':
     objs = 0
     batch_size = 1
     data = torch.load('./testing_data/testing_data_' + str(n_nodes) + '_' + str(1))
-    #data = torch.load('./testing_data/testing_data_NonHom_' + str(n_nodes) + '_' + str(1))
     depot_indices = [0,1,2,3,4]
-    #depot_indices = [0,1]
 
 
     coords = data.squeeze(0)
