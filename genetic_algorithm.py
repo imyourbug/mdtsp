@@ -12,15 +12,6 @@ from skfuzzy import control as ctrl
 import copy
 import random
 
-# POPULATION NUMBER
-Population_Number = 100
-
-# MAX GENERATIONS
-max_generations = 10
-
-n_agent = 5
-n_nodes = 50
-
 
 def set_seeds(seed=42):
     random.seed(seed)
