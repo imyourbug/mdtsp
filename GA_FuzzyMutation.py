@@ -360,7 +360,7 @@ if __name__ == '__main__':
     max_generations = 10
 
     n_agent = 5
-    n_nodes = 20
+    n_nodes = 50
     data = torch.load('./testing_data/testing_data_' + str(n_nodes) + '_' + str(1))
 
     ### UNCOMMENT FOR ORTOOLS CALCULATION
