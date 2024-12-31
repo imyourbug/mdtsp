@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import random
 
 
-
 class Agentembedding(nn.Module):
     def __init__(self, node_feature_size, key_size, value_size, n_agent):
         super(Agentembedding, self).__init__()
@@ -118,24 +117,26 @@ def action_sample(pi):
 
 def get_reward(action, data, n_agent, plot):
     data = data*1000
-    #action%=n_agent
+    # action%=n_agent
     # Assuming the first 'n_agent' entries are unique depots for each agent
     depots = data[:, :n_agent, :].tolist()
+    print(f"default depots {depots}")
     n_nodes = data.size(1)  # This includes depots + cities
 
     sub_tours = [[[] for _ in range(n_agent)] for _ in range(data.shape[0])]
+    sub_tours2 = [[[] for _ in range(n_agent)] for _ in range(data.shape[0])]
     for batch_index in range(data.shape[0]):
-        #print("Action matrix for batch {}: {}".format(batch_index, action[batch_index].tolist()))
+        # print("Action matrix for batch {}: {}".format(batch_index, action[batch_index].tolist()))
         for node_index, agent_index in enumerate(action.tolist()[batch_index]):
-            #print("Agent index = " ,agent_index)
+            # print("Agent index = " ,agent_index)
             city_index = node_index + n_agent  # Adjust index to skip depots
-            #print("agent index = ", agent_index)
+            # print("agent index = ", agent_index)
             if city_index < n_nodes:  # Ensure index is within bounds
                 city = data[batch_index, city_index, :].tolist()
-                #print(city)
-                #print(batch_index,agent_index)
+                # print(city)
+                # print(batch_index,agent_index)
                 agent_index %= n_agent  # Ensure valid agent indices
-                #print("agent index = ", agent_index)
+                # print("agent index = ", agent_index)
                 sub_tours[batch_index][agent_index].append(city)
 
     # Insert depot as the start and end point of each tour
@@ -144,20 +145,23 @@ def get_reward(action, data, n_agent, plot):
             sub_tours[batch_index][agent_index].insert(0, depots[batch_index][agent_index])
             sub_tours[batch_index][agent_index].append(depots[batch_index][agent_index])
 
+    print(f"sub_tours {sub_tours}")
+    print(f"sub_tours {sub_tours}")
+
     subtour_max_lengths = [0 for _ in range(data.shape[0])]
     for batch_index in range(data.shape[0]):
         for agent_index in range(n_agent):
             tour_instance = sub_tours[batch_index][agent_index]
-            #tour_length = solve(tour_instance,agent_index) / 1000
+            # tour_length = solve(tour_instance,agent_index) / 1000
             tour_length = solve(tour_instance, agent_index, plot) / 1000
             if tour_length > subtour_max_lengths[batch_index]:
                 subtour_max_lengths[batch_index] = tour_length
 
-            #print(f"Objective for agent {agent_index} in batch {batch_index}: {tour_length}")
-            #print("Route for agent {}: {}".format(agent_index, " -> ".join(str(x) for x in tour_instance)))
+            # print(f"Objective for agent {agent_index} in batch {batch_index}: {tour_length}")
+            # print("Route for agent {}: {}".format(agent_index, " -> ".join(str(x) for x in tour_instance)))
+    print(f"subtour_max_lengths {subtour_max_lengths}")
 
     return subtour_max_lengths
-
 
 
 if __name__ == '__main__':
